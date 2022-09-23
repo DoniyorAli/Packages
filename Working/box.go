@@ -48,12 +48,9 @@ func Mod(num1, num2 Work) Work {
 	return bag
 }
 
-// func Abs(num Work) Work {
-// 	bag := Work{}
-// 	f := num.Value
-// 	x, _ := strconv.ParseFloat(f, 64)
-// 	if x < 0 {
-// 		bag.Value = math.Abs(x)
-// 		return bag
-// 	}
-// }
+func Abs(num Work) Work {
+	g := Work{}
+	bag, _ := strconv.Atoi(num.Value[1:])
+	g.Value = strconv.Itoa(bag)
+	return g
+}
