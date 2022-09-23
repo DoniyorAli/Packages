@@ -26,8 +26,8 @@ func main() {
 	ten := numbox.Work{Value: "10"}
 	fmt.Println("Two numbers were modded:", numbox.Mod(nine, ten))
 
-	onee := numbox.Work{Value: "-123"} 
-	fmt.Println("Two numbers were modded:", numbox.Abs(onee))
+	eleven := numbox.Work{Value: "-123"} 
+	fmt.Println("Abs[]:", numbox.Abs(eleven))
 
 }
 
